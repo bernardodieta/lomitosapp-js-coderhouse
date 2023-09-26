@@ -1,7 +1,7 @@
 let divprincipal = document.getElementById('refugiomenu__cards');
 let refugioLista;
 let tempstorlist;
-
+cargarDog();
 var refugio = {
     "id": this.id,
     "category": this.category,

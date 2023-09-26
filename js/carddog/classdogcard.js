@@ -14,14 +14,14 @@ class Dogcard{
 
 }
 //Guardar datos del arreglo en el storage para tener contenido que visualizar.
-// const cargarDog = (dogcard) => {
-//     newdog = [];
-//     for(const card of dogCard){
-//         newdog.push(new Dogcard(card));
-//         localStorage.setItem("Lista de Tarjeta de Perros", JSON.stringify(newdog));
+const cargarDog = (dogcard) => {
+    newdog = [];
+    for(const card of dogCard){
+        newdog.push(new Dogcard(card));
+        localStorage.setItem("Lista de Tarjeta de Perros", JSON.stringify(newdog));
 
-//     }
-// }
-// cargarDog();
+    }
+}
+
 
 
