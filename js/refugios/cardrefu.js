@@ -1,4 +1,4 @@
-let divprincipal = document.getElementById('refugiomenu__cards');
+let divprincipal3 = document.getElementById('refugiomenu__cards');
 let refugioLista;
 let tempstorlist;
 
@@ -19,7 +19,7 @@ refugioLista = JSON.parse(localStorage.getItem("Lista de Refugios")) || [];
 const mostrarRefugios = () => {
     let tempstor = refugioLista;
     tempstorlist = [];
-    divprincipal.innerHTML = "";
+    divprincipal3.innerHTML = "";
 
     //Itero todo el arreglo que tiene los datos obtenidos del localstorage y los convierto en un objeto
     for(const objeto of tempstor){
@@ -28,7 +28,7 @@ const mostrarRefugios = () => {
 
    //Por cada objeto que hay dentro de el nuevo arreglo creo el contenido html y lo muestro
     for(const refu of tempstorlist){
-        console.log(refu);
+        
         let newdiv = document.createElement('div');
         newdiv.className = "refugiomenu__cards-card";
         newdiv.innerHTML =     `<div class="category">${refu.category}</div>
@@ -44,7 +44,7 @@ const mostrarRefugios = () => {
             </div>
         </a>`;
        
-        divprincipal.appendChild(newdiv);
+        divprincipal3.appendChild(newdiv);
     }
 }
 mostrarRefugios();
