@@ -1,4 +1,4 @@
-let divprincipal2 = document.getElementById('menuadopcion__cards');
+
 let dogLista;
 let tempdogLista;
 
@@ -20,6 +20,7 @@ dogLista = JSON.parse(localStorage.getItem("Lista de Tarjeta de Perros")) || [];
 
 
 const mostrarDogcard = () => {
+    let divprincipal2 = document.getElementById('menuadopcion__cards');
     let templist = dogLista;
     tempdogLista = [];
     divprincipal2.innerHTML = "";
