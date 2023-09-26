@@ -1,4 +1,4 @@
-
+let divprincipal2 = []
 let dogLista;
 let tempdogLista;
 
