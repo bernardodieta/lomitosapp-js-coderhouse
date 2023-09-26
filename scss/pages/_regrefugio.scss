@@ -1,0 +1,135 @@
+.section__form-container {
+    display: flex;
+    width: 90%;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: center;
+    
+    @include mobile {
+        width:100%;
+        flex-direction: column;
+
+        .form_iz{
+            width: 80%;
+        }
+
+        
+        
+       
+    }
+
+    @include tablet {
+        h3{
+            font-size: 1.4rem;
+        }
+       
+        flex-direction: row;
+        gap: 20px;
+       
+
+    }
+
+    @include desktop {
+       
+        flex-direction: row;
+        gap: 60px;
+       
+
+    }
+   
+
+}
+.section__regrefu-texto{
+   width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    @include mobile {
+        h1{
+            font-size: $h1mobile;
+            margin: 0 auto;
+            color:$color-main
+        }
+        h2{
+            text-align: center;
+            font-size: 1.2rem;
+        }
+        p{
+            width: 80%;
+            font-size: $pmobile;
+            margin: 0 auto;
+           
+        }
+      
+        .pbeneficio{
+            margin: 0 auto;
+            font-size: 1rem;
+        }
+
+    }
+    @include tablet {
+        h1{
+            font-size: 1.8rem;
+            margin: 0 auto;
+            color:$color-main
+        }
+        h2{
+            text-align: center;
+            font-size: 1.6rem;
+        }
+       
+        p{
+            width: 80%;
+            font-size: $ptablet;
+            margin: 0 auto;
+           
+        }
+      
+        .pbeneficio{
+            margin: 0 auto;
+            font-size: 1rem;
+        }
+        
+    }
+    @include desktop {
+        h1{
+            font-size: 2.4rem;
+            margin: 0 auto;
+            color:$color-main
+        }
+        h2{
+            text-align: center;
+            font-size: 1.8rem;
+        }
+        p{
+            width: 80%;
+            font-size: $pdesktop;
+            margin: 0 auto;
+           
+        }
+      
+        .pbeneficio{
+            margin: 0 auto;
+            font-size: 1rem;
+        }
+        
+    }
+}
+
+.h2titulo{
+    
+    margin: 50px auto;
+    width: 100%;    
+    text-align: center;
+    color: $color-main;
+    @include mobile {
+        font-size: $h2mobile;
+    }
+    @include tablet {
+        font-size: 1.8rem;
+    }
+    @include desktop{
+        font-size: $h2desktop;
+    }
+    
+}

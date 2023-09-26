@@ -1,0 +1,57 @@
+.porqueadoptar {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    @include mobile {
+
+        h1{
+            color: $color-main;
+            font-size: $h1mobile;
+        }
+        h2{
+            font-size: $h2mobile;
+        }
+        &-p2{
+            width: 90%;
+            text-align: center;
+            font-size: 1.1rem;
+
+        }
+    }
+
+
+    @include tablet {
+        h1{
+            color: $color-main;
+            font-size: $h1tablet;
+        }
+        h2{
+            font-size: $h2tablet;
+        }
+
+        &-p2{
+            width: 90%;
+            text-align: center;
+            font-size: 1.1rem;
+
+        }
+    }
+
+    @include desktop {
+        h1{
+            font-size: $h1desktop;
+        }
+        &-p2{
+            width: 90%;
+            text-align: center;
+            font-size: 1.1rem;
+
+        }
+    }
+
+
+
+
+}

@@ -1,0 +1,244 @@
+
+
+.desactivado {
+    display: none;
+}
+
+.registrocompletado {
+    color: #19b014;
+    border-radius: 1rem;
+    margin: 0 auto;
+    padding: 10px 10px;
+    width: 400px;
+    max-width: 400px;
+    text-align: center;
+    background-color: #f3f3f3;
+
+}
+
+.background {
+    .h2form {
+        width: max-content;
+        margin: 20px auto;
+
+        @include mobile {
+            font-size: 1.3rem;
+
+
+        }
+
+        @include tablet {
+            font-size: 1.4rem;
+
+
+        }
+
+        @include desktop {
+            font-size: 1.8rem;
+
+
+        }
+
+
+    }
+
+   
+
+    .section__form-container {
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            align-items: start;
+            margin: 20px auto;
+            justify-content: space-between;
+
+            .container-derecho {
+                width: 100%;
+
+                h3 {
+                    text-align: center;
+                    margin: 20px auto;
+                }
+
+                label {
+                    font-size: $pmobile;
+
+                }
+
+                .inputtext {
+                    display: flex;
+                    background-color: #e9e9e9;
+                    width: 100%;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    border-radius: 0.2rem;
+                }
+
+            }
+
+            .container-check {
+
+                width: 100%;
+                display: grid;
+                grid-template-columns: 30px 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                align-items: center;
+
+                label {
+                    font-size: 1rem;
+                }
+            }
+
+        }
+
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            width: 80%;
+            align-items: start;
+            margin: 20px auto;
+            gap: 20px;
+            justify-content: space-between;
+
+            .container-derecho {
+                width: 100%;
+
+                h3 {
+                    font-size: 1.4rem;
+                    text-align: center;
+                    margin: 20px auto;
+                }
+
+                label {
+                    font-size: $pmobile;
+
+                }
+
+            }
+
+            .container-check {
+
+                width: 100%;
+                display: grid;
+                grid-template-columns: 30px 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                align-items: center;
+
+                label {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        @include desktop {
+            display: flex;
+            flex-direction: row;
+            width: 70%;
+            align-items: start;
+            margin: 20px auto;
+            gap: 20px;
+            justify-content: space-between;
+
+            .container-derecho {
+                width: 100%;
+
+                h3 {
+                    text-align: center;
+                    margin: 20px auto;
+                }
+
+                label {
+                    font-size: $pmobile;
+
+                }
+
+                .inputtext {
+                    display: flex;
+                    background-color: #e9e9e9;
+                    width: 100%;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    border-radius: 0.2rem;
+                }
+
+            }
+
+            .container-check {
+
+                width: 100%;
+                display: grid;
+                grid-template-columns: 30px 1fr;
+                grid-template-rows: repeat(2, 1fr);
+                align-items: center;
+
+                label {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+
+
+}
+
+
+.section__reguser-texto {
+    @include mobile {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+
+        h1 {
+            margin: 20px auto;
+            font-size: $h1mobile;
+            color: $color-main;
+        }
+
+        p {
+            width: 85%;
+            margin: 0 auto;
+            font-size: $pmobile;
+        }
+    }
+
+    @include tablet {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+
+        h1 {
+            margin: 20px auto;
+            font-size: $h1mobile;
+            color: $color-main;
+        }
+
+        p {
+            width: 85%;
+            margin: 0 auto;
+            font-size: $pmobile;
+        }
+    }
+
+    @include desktop {
+
+
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+
+        h1 {
+            margin: 20px auto;
+            font-size: $h1mobile;
+            color: $color-main;
+        }
+
+        .user-p {
+            width: 90%;
+            margin: 0 auto;
+            font-size: 1.2rem;
+        }
+
+    }
+}

@@ -1,0 +1,12 @@
+@mixin flex($dir, $just, $align){
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $align;
+}
+
+@mixin margin($left, $right){    
+    margin-left: $left;
+    margin-right: $right;
+
+}

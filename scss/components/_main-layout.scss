@@ -1,0 +1,45 @@
+body {
+
+    background-color:$color-withe;
+    color: $color-black;
+    font-family: 'Calibri', sans-serif;
+    /* background-image: url(../img/backgroundmobile.jpg); */
+    
+
+}
+
+
+
+    .main__container{
+
+        @include mobile {
+            max-width: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+            transition: .6s;   
+        
+        }
+        @include desktop {
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+       
+    }
+
+    .content__container{
+
+        @include mobile {
+            max-width: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+            transition: .6s;   
+        
+        }
+        @include desktop {
+            max-width: 1280px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+       
+    }

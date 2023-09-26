@@ -1,0 +1,353 @@
+.refugiosmain {
+
+    @include mobile{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 40px;
+        align-items: center;
+        justify-content: center;
+       h1{
+        font-size: $h1tablet;
+        color: $color-withe;
+       }
+        .areatablet{
+            text-align: center;
+            width: 80%;
+        }
+
+        &__grid {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 400px;
+            
+            margin-bottom: auto;
+            align-items: center;
+            justify-content: center;
+
+
+
+
+            .fotospan {
+                width: max-content;                
+                padding-top: 20px;
+                margin-bottom: 2px;
+
+            }
+
+            .fotos {
+                width: 100%;
+                padding: 0px 7px;
+                
+            }
+
+            .mapa-info {
+                margin-top: 20px;
+
+                h4 {
+                    margin: 5px auto;
+                }
+
+                .maparef {
+                    width: 95%;
+                }
+            }
+
+
+            .refugios__fotitos {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                
+            }
+        }
+
+        &__textbox {
+            width: 90%;            
+            display: flex;
+            flex-direction: column;
+           
+          
+            .refugiomain__textos {
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 0 auto;
+                justify-content: space-evenly;
+
+
+                h3 {
+                    
+                    font-size: $h3desktop;
+                }
+
+                h5 {
+                    font-size: $h5desktop;
+                }
+
+               
+
+            }
+            .--desktop{
+                display: none;
+            }
+            .area {
+                margin: 0 auto;
+                text-align: center;
+                width: 90%;
+                font-size: 1rem;
+            }
+
+            .areaayuda {
+                margin: 0 auto;
+                width: 80%;
+                font-size: 1rem;
+                padding-left: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                li {
+                    font-size: 1rem;
+                    list-style: disc;
+
+                }
+
+            }
+        }
+    }
+    @include tablet {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 40px;
+        align-items: center;
+        justify-content: center;
+       h1{
+        font-size: $h1tablet;
+        color: $color-withe;
+       }
+        .areatablet{
+            text-align: center;
+            width: 80%;
+        }
+
+        &__grid {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 400px;
+            
+            margin-bottom: auto;
+            align-items: center;
+            justify-content: center;
+
+
+
+
+            .fotospan {
+                width: max-content;                
+                padding-top: 20px;
+                margin-bottom: 2px;
+
+            }
+
+            .fotos {
+                width: 100%;
+                padding: 0px 7px;
+                
+            }
+
+            .mapa-info {
+                margin-top: 20px;
+
+                h4 {
+                    margin: 5px auto;
+                }
+
+                .maparef {
+                    width: 95%;
+                }
+            }
+
+
+            .refugios__fotitos {
+                display: grid;
+                width: max-content;
+                grid-template-columns: repeat(4, 1fr);
+               
+            }
+        }
+
+        &__textbox {
+            width: 90%;            
+            display: flex;
+            flex-direction: column;
+           
+          
+            .refugiomain__textos {
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                margin: 0 auto;
+                justify-content: space-evenly;
+
+
+                h3 {
+                    
+                    font-size: $h3desktop;
+                }
+
+                h5 {
+                    font-size: $h5desktop;
+                }
+
+               
+
+            }
+            .--desktop{
+                display: none;
+            }
+            .area {
+                margin: 0 auto;
+                text-align: center;
+                width: 90%;
+                font-size: 1rem;
+            }
+
+            .areaayuda {
+                margin: 0 auto;
+                width: 80%;
+                font-size: 1rem;
+                padding-left: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                li {
+                    font-size: 1rem;
+                    list-style: disc;
+
+                }
+
+            }
+        }
+    }
+    @include desktop {
+        
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+        padding-top: 40px;
+
+        &__grid {
+            display: flex;
+            flex-direction: column;
+            width: 100%;            
+            margin-bottom: auto;
+            align-items:center;
+
+            .fotospan {
+                width: max-content;                
+                padding-top: 20px;
+                margin-bottom: 2px;
+                object-fit: cover;
+
+            }
+
+            .fotos {
+
+                width: 100%;                
+                padding: 0px 7px;
+            }
+
+            .mapa-info {
+                margin-top: 20px;
+
+                h4 {
+                    margin: 5px auto;
+                }
+
+                .maparef {
+                    width: 95%;
+                }
+            }
+
+
+            .refugios__fotitos {
+                width:max-content;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                
+                
+              
+            }
+        }
+
+        &__textbox {
+            width: 100%;
+
+            .refugiomain__textos {
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+
+                h3 {
+                    font-size: $h3desktop;
+                }
+
+                h5 {
+                    font-size: $h5desktop;
+                }
+
+                .refugiomain__textos-btns {
+                    margin-left: auto;
+
+
+                }
+
+
+            }
+
+            .area {
+                width: 90%;
+                font-size: 1rem;
+            }
+
+            .areaayuda {
+                font-size: 1rem;
+                padding-left: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+                li {
+                    font-size: 1rem;
+                    list-style: disc;
+
+                }
+
+            }
+        }
+        .--tablet{
+            display: none;
+        }
+    }
+    
+}
+
+
+
+
+
+.--width {
+    width: 90%;
+}
+
+.fotospan, .fotos, .maparef{
+    filter:drop-shadow( 5px 5px 12px rgba(175, 175, 175, 0.5)); 
+}

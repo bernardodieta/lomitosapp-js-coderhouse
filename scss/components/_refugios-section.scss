@@ -1,0 +1,292 @@
+
+.refugios {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    
+    @include mobile {
+        
+        .refugios__container-img-desktop {
+            display: none;
+        }
+       
+
+        &__container {
+            margin: 0 auto;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            &-text {
+               
+
+                h3 {
+                    width: 90%;
+                    margin: 0 auto;
+                    
+                    color: $color-main;
+                    text-align: center;
+                }
+
+                p {
+                    
+                    color: $color-black;
+                    text-align: center;
+                    padding: 10px 0;
+                }
+            }
+
+        }
+        .-statusmobile{
+            display: none;
+        }
+
+        &__card {
+            margin: 0 auto;
+            width: 60%;
+            background-color: $color-main;
+            border-radius: 1.2rem;
+            max-width: 204px;
+            text-align: center;
+            transition: .4s;
+            h3{
+                padding: 5px 0;
+                color: $color-withe;
+            }
+            h5{
+                padding: 5px 0;
+            }
+            
+            .mapita {                
+                margin: 0 auto;
+
+            }
+            
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+
+    }
+
+    @include tablet {
+
+        &__container {
+            margin: 0 auto;
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 20px;
+
+
+
+            &-text {
+                width: 75%;
+
+                h2 {
+                    width: 100%;                    
+                    color: $color-main;
+                    text-align: right;
+                    padding: 10px 0;
+                }
+
+                p {
+                    width: 100%;
+                    
+                    color: $color-black;
+                    text-align: right;
+                    padding: 10px 0;
+                }
+
+                .btn {
+                    margin-right: 0px;
+                }
+            }
+
+            .refugio__container-img-mobile {
+                display: none;
+            }
+          
+
+            &-img-desktop {
+                width: 100%;
+            }
+
+        }
+
+        &__card {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            max-width: 204px;
+            background-color: $color-main;
+            border-radius: 1.2rem;
+            transition: .4s;
+           
+
+
+            h3 {
+                font-size: 1.4rem;
+                text-align: center;
+                color: $color-withe;
+                padding: 5px 0;
+            }
+
+            p {
+                margin: 0 auto;
+                text-align: center;
+                width: 90%;
+                font-size: 1rem;
+                
+            }
+            h5{
+                padding: 5px 0;
+            }
+
+            h5 {
+                text-align: center;
+                margin: 0 auto;
+            }
+            
+            &:hover{
+                transform: scale(1.05);
+            }
+
+        }
+
+        &__box {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: space-evenly;
+
+            .mapita {
+                
+                margin: 0 auto;
+                width: 100%;
+
+            }
+            .statustablet{
+                display: none;
+            }
+        }
+
+    }
+
+    @include desktop {
+
+        &__container {
+            margin: 0 auto;
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+
+
+
+            &-text {
+                width: 75%;
+
+                h2 {
+                    width: 100%;
+                    font-size: 1.9rem;
+                    color: $color-main;
+                    text-align: right;
+                    padding: 10px 0;
+                }
+
+                p {
+                    width: 100%;
+                    font-size: 1.2rem;
+                    color: $color-black;
+                    text-align: right;
+                    padding: 10px 0;
+                }
+
+                .btn {
+                    margin-right: 0px;
+                }
+            }
+
+            .refugio__container-img-mobile {
+                display: none;
+            }
+
+            &-img-desktop {
+                width: 100%;
+            }
+
+        }
+
+        &__card {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            max-width: 204px;
+            background-color: $color-main;
+            border-radius: 1.2rem;
+            cursor: pointer;
+            transition: .4s;
+
+
+            h3 {
+                text-align: center;
+                padding: 5px 0;
+                color: $color-withe;
+                font-size: 1.4rem;
+            }
+
+            p {
+                margin: 0 auto;
+                text-align: center;
+                width: 90%;
+                font-size: 1rem;
+                
+            }
+            h5{
+                padding: 5px 0;
+                text-align: center;
+                margin: 0 auto;
+                
+            }
+
+            &:hover{
+                transform: scale(1.05);
+
+            }
+
+           
+        }
+
+        &__box {
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            align-items: center;
+            margin: 0 auto;
+            justify-content: space-evenly;
+
+            .mapita {
+                
+                margin: 0 auto;
+
+            }
+        }
+    }
+
+}
+
+.refugios__card{
+    filter:drop-shadow( 5px 5px 12px rgba(175, 175, 175, 0.5)); 
+}
