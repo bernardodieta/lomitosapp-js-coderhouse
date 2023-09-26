@@ -2,6 +2,12 @@ let divprincipal = document.getElementById('menuadopcion__cards');
 let dogLista;
 let tempdogLista;
 
+newdog = [];
+for(const card of dogCard){
+    newdog.push(new Dogcard(card));
+    localStorage.setItem("Lista de Tarjeta de Perros", JSON.stringify(newdog));
+
+}
 var dogcard = {
     "id": this.id,
     "category": this.category,
