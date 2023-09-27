@@ -18,7 +18,6 @@ var dogcard = {
 dogLista = JSON.parse(localStorage.getItem("Lista de Tarjeta de Perros")) || [];
 
 
-
 const mostrarDogcard = () => {
     let divprincipal2 = document.getElementById('menuadopcion__cards');
     let templist = dogLista;
@@ -29,9 +28,11 @@ const mostrarDogcard = () => {
         tempdogLista.push(new Dogcard(obj));
     }
 
+
     for (const dog of tempdogLista) {
         let newdiv = document.createElement("div");
         newdiv.className = "menuadopcion__cards-card";
+        newdiv.id="menuadopcion__cards-card";
         newdiv.innerHTML = `
         <img src="${dog.imagen}" alt="Foto de Perro en adopcion">
         <div class="category">${dog.category}</div>
@@ -53,8 +54,16 @@ const mostrarDogcard = () => {
         <h4>Refugio: ${dog.refugio}</h4>
         <a href="./adopcioncard.html">
         <div class="btn__card">Adoptar</div>
-        </a>`;
+        </a>`;       
+       
+        const adoptButton = newdiv.querySelector('.btn__card');
+        adoptButton.addEventListener('click', () => {
+            //console.log(dog.id);
+            captura(dog.id);    
+           });
+
         divprincipal2.appendChild(newdiv);
-        }
+    }
 }
+
 mostrarDogcard();
