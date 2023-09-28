@@ -4,6 +4,7 @@ class Dogcard{
         this.category = dogcard.category;
         this.nombre = dogcard.nombre;
         this.descripcion = dogcard.descripcion;
+        this.descripcionlarga = dogcard.descripcionlarga;        
         this.tamaño = dogcard.tamaño;
         this.sexo = dogcard.sexo;
         this.edad = dogcard.edad;

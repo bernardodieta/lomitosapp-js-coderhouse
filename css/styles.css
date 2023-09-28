@@ -2351,4 +2351,9 @@ body {
   width: 100%;
 }
 
+.form__content {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
 /*# sourceMappingURL=styles.css.map */

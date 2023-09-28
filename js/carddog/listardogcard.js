@@ -1,4 +1,4 @@
-let divprincipal2 = []
+let divprincipal2 = [];
 let dogLista;
 let tempdogLista;
 
@@ -19,10 +19,10 @@ dogLista = JSON.parse(localStorage.getItem("Lista de Tarjeta de Perros")) || [];
 
 
 const mostrarDogcard = () => {
-    let divprincipal2 = document.getElementById('menuadopcion__cards');
+    let divprincipal2 = document.querySelector('#menuadopcion__cards');
     let templist = dogLista;
     tempdogLista = [];
-    divprincipal2.innerHTML = "";
+    divprincipal2.innerHTML = ``;
 
     for (const obj of templist) {
         tempdogLista.push(new Dogcard(obj));
@@ -58,12 +58,12 @@ const mostrarDogcard = () => {
        
         const adoptButton = newdiv.querySelector('.btn__card');
         adoptButton.addEventListener('click', () => {
-            //console.log(dog.id);
-            captura(dog.id);    
-           });
+            JSON.stringify(sessionStorage.setItem('iddog', dog.id));
+        });
 
         divprincipal2.appendChild(newdiv);
     }
 }
 
 mostrarDogcard();
+

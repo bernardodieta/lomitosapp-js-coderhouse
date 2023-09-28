@@ -179,3 +179,49 @@ const mostrarDogcard = () => {
         }
 }
 mostrarDogcard();
+
+
+
+
+///////////////////////////
+
+
+let content = document.getElementById('adopcion__description');
+    let nuevo = document.createElement('div');
+    nuevo.className = 'adopcion__description-box'
+    nuevo.innerHTML = `
+    <div class="category">Adopcion - Perros</div>
+    <h2>Buddy</h2>
+    <h3>${objetoEncontrado}</h4>
+        <h3>${objetoEncontrado}</h4>
+            <h3>Esterilizado</h4>
+        </div>
+        <div class="adopcion__description-text">
+            <p>Hace unos meses, un grupo de rescatistas voluntarios recibió un desgarrador llamado de
+                auxilio.
+                Un perro abandonado y maltratado había sido avistado en las afueras de la ciudad, luchando
+                por
+                sobrevivir en condiciones desoladoras. Conmovidos por su situación, se dirigieron de
+                inmediato
+                al lugar. Al llegar, encontraron a un perro desnutrido y cubierto de heridas, pero su mirada
+                aún
+                mostraba una chispa de esperanza.</p><br>
+            <p>
+                Con cuidado y amor, los rescatistas colocaron al perro en una manta caliente y lo llevaron a
+                un
+                refugio de animales cercano. Allí, el personal del refugio se dedicó a brindarle los
+                cuidados
+                médicos que tanto necesitaba. El perro, que pronto fue llamado "Buddy", fue sometido a
+                tratamientos veterinarios, recibió comida nutritiva y se le dio un lugar seguro y cálido
+                para
+                descansar. A medida que los días pasaban, Buddy comenzó a recuperarse lentamente, mostrando
+                una
+                confianza renovada en los seres humanos a pesar de su pasado traumático. El refugio,
+                consciente
+                de su increíble transformación, se propuso encontrarle un hogar amoroso y permanente, donde
+                pudiera comenzar una nueva vida llena de cariño y cuidado.
+            </p>
+        </div>
+        `;
+    content.appendChild(nuevo);
+    console.log(nuevo);
