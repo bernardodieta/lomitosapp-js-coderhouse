@@ -29,12 +29,12 @@ btnadoptar.addEventListener("click", function () {
             'success'
           )
         } else if (
-          /* Read more about handling dismissals below */
+         
           result.dismiss === Swal.DismissReason.cancel
         ) {
           swalWithBootstrapButtons.fire(
-            'Cancelled',
-            'Your imaginary file is safe :)',
+            'Tu solicitud fue cancelada.',
+            'Lamentamos que te hayas arrepentido.',
             'error'
           )
         }

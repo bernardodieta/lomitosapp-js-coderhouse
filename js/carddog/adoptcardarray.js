@@ -107,4 +107,40 @@ const dogCard = [
     "refugio": "Amor y Patas",
     "imagen": "../content_edit/img/section3/carusel/dog9.png"
   },
+  {
+    "id": 10,
+    "category": "adopcion",
+    "nombre": "Lucy",
+    "descripcion": "Cachorra de raza beagle traviesa y simpática",
+    "descripcionlarga": "Lucy fue rescatada de un refugio superpoblado, donde estaba ansiosa por encontrar un hogar. A pesar de su tamaño pequeño, su personalidad traviesa y simpática la hacía destacar. Lucy fue llevada al refugio 'Esperanza Animal', donde recibió amor y cuidado. Ahora, Lucy es una cachorra traviesa y simpática que adora explorar y jugar con juguetes. Siempre está lista para compartir su alegría con su familia adoptiva.",
+    "tamaño": "Pequeño",
+    "sexo": "Hembra",
+    "edad": "Vacunada",
+    "refugio": "Esperanza Animal",
+    "imagen": "../content_edit/img/section3/carusel/dog8.png"
+  },
+  {
+    "id": 11,
+    "category": "adopcion",
+    "nombre": "Rocky",
+    "descripcion": "Cachorro de raza boxer enérgico y juguetón",
+    "descripcionlarga": "Rocky fue encontrado en un parque local, corriendo y jugando sin dueño. Su energía era contagiosa, pero también evidenciaba su necesidad de atención y cuidado. Fue llevado al refugio 'Milagros Caninos', donde se le brindó cuidado y amor. Hoy en día, Rocky es un perro enérgico y juguetón que disfruta de la compañía de otros perros y de las actividades al aire libre. Es el compañero perfecto para una familia activa.",
+    "tamaño": "Mediano",
+    "sexo": "Macho",
+    "edad": "Vacunado",
+    "refugio": "Milagros Caninos",
+    "imagen": "../content_edit/img/section3/carusel/dog7.png"
+  },
+  {
+    "id": 12,
+    "category": "adopcion",
+    "nombre": "Buddy",
+    "descripcion": "Perro adulto de raza golden retriever amigable y obediente",
+    "descripcionlarga": "Buddy fue encontrado abandonado en un parque local, esperando en vano a su familia. Estaba en un estado de tristeza y desconfianza. Su salud también era un motivo de preocupación, con signos de desnutrición. Fue llevado al refugio 'Rescate Canino', donde recibió atención médica y apoyo emocional. Hoy en día, Buddy es un perro amigable y obediente que ama jugar con otros perros y hacer feliz a su familia adoptiva. Su lealtad es incomparable.",
+    "tamaño": "Grande",
+    "sexo": "Macho",
+    "edad": "Vacunado",
+    "refugio": "Rescate Canino",
+    "imagen": "../content_edit/img/section3/carusel/dog5.png"
+  },
 ];

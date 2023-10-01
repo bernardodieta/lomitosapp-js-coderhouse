@@ -96,7 +96,7 @@ const mostrarDog = () => {
     `;
 
     contenedor.appendChild(newdiv);
-    console.log(buscar)
+    //console.log(buscar)
 }
 
 mostrarDog();

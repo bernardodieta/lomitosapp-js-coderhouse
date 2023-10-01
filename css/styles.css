@@ -400,6 +400,21 @@ body {
   transition: 0.2s;
 }
 
+.btn__refu {
+  display: flex;
+  width: max-content;
+  padding: 0.4rem 1.2rem;
+  border-radius: 10px;
+  background-color: #FAFF00;
+  margin: 10px auto;
+  cursor: pointer;
+}
+.btn__refu:hover {
+  background-color: #f7f8cc;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
 .refugios {
   width: 100%;
   margin-left: auto;

@@ -1,10 +1,10 @@
-const refuCard = [
+[
   {
     "id": 1,
     "nombre": "Juan",
     "apellido": "Pérez",
     "email": "juan@example.com",
-    "category":"Refugios",
+    "category": "Refugios",
     "candog": 20,
     "canper": 5,
     "nombrerefu": "Refugio de Animales Felices",
@@ -270,5 +270,4 @@ const refuCard = [
     "vet": "Clínica Veterinaria Alegría Animal",
     "descripcion": "El Refugio de la Alegría Canina se dedica a brindar alegría y amor a los perros sin hogar. Nuestro equipo se esfuerza por encontrar hogares amorosos y llevar la alegría a la vida de estos maravillosos animales."
   }
-
-];
+]
