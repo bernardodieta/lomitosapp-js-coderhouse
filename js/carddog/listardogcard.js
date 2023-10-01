@@ -54,8 +54,8 @@ const mostrarDogcard = () => {
         <h4>Refugio: ${dog.refugio}</h4>
         <a href="./adopcioncard.html">
         <div class="btn__card">Adoptar</div>
-        </a>`;       
-       
+        </a>`;
+
         const adoptButton = newdiv.querySelector('.btn__card');
         adoptButton.addEventListener('click', () => {
             JSON.stringify(sessionStorage.setItem('iddog', dog.id));
@@ -66,4 +66,3 @@ const mostrarDogcard = () => {
 }
 
 mostrarDogcard();
-

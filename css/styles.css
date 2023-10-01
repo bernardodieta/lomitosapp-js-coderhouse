@@ -2371,4 +2371,11 @@ body {
   max-width: 500px;
 }
 
+.container_login {
+  font-size: 1.4rem;
+  width: 550px;
+  height: 250px;
+  border-radius: 1rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
